@@ -1,0 +1,15 @@
+<div class="container text-center">
+    <div class="row align-items-start">
+        {{#each user}}
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="{{profileImg}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{name}} {{secondName}}</h5>
+                    <a href="/students/{{_id}}" class="btn btn-primary">Ver Perfil</a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

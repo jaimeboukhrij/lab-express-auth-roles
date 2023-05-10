@@ -1,0 +1,51 @@
+<div class="containerList">
+    <div class="images">
+        <img src="{{student.profileImg}}" />
+    </div>
+    <div class="slideshow-buttons">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+    </div>
+    <p class="pick">choose size</p>
+
+    <div class="product">
+        <ul>
+            <li>
+                <h2>{{student.name}} </h2>
+            </li>
+            <li>
+                <h1>Username: {{student.userRole}}</h1>
+            </li>
+
+            <li>
+                <h1>Image Profile: {{student.profileImg}}</h1>
+            </li>
+
+            <li>
+                <h1>Description: {{student.description}}</h1>
+            </li>
+        </ul>
+
+        {{#if userRole.isPM}}
+        <form action="/students/edit/{{student._id}}" method="GET" style="display: inline">
+            <input type="submit" value="Edit" class="btn btn-sm btn-danger">
+        </form>
+
+        <form action="/students/delete/{{student._id}}" method="POST" style="display: inline">
+            <input type="submit" value="Delete" class="btn btn-sm btn-danger">
+        </form>
+        {{/if}}
+
+        {{#if userRole.isOwner}}
+        <form action="/students/edit/{{student._id}}" method="GET" style="display: inline">
+            <input type="submit" value="Edit" class="btn btn-sm btn-danger">
+        </form>
+
+        {{/if}}
+
+
+
+    </div>
+</div>

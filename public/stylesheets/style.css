@@ -1,16 +1,22 @@
 body {
   font-weight: 200;
   font-family: sans-serif;
+  background-color: #222;
+}
+
+.card img {
+  width: 280px;
+  height: 300px;
 }
 
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 200;
 }
 
-.navbar {
-  margin-bottom: 80px;
-}
+
 
 .navbar form button {
   background: transparent;
@@ -29,7 +35,7 @@ h1, h2, h3 {
 }
 
 
-@keyframes  showFromBottom {
+@keyframes showFromBottom {
   0% {
     bottom: -50px
   }
@@ -46,4 +52,208 @@ h1, h2, h3 {
   100% {
     bottom: -50px
   }
+}
+
+/* STYLE DE LA PAGINA DE DETALLE DEL STUDEN */
+
+
+
+/* center container in the middle */
+
+
+.containerList {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 820px;
+  height: 550px;
+  background: rgb(37, 150, 224);
+  box-shadow: 5px 5px 15px rgba(c, .5);
+  border-radius: 10px;
+  list-style: none;
+}
+
+.containerList ul {
+  list-style: none;
+}
+
+
+p {
+  font-size: 0.6em;
+  color: rose;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 1.2em;
+  color: dark;
+  margin-top: -5px;
+
+}
+
+h2 {
+  color: tan;
+  margin-top: -5px;
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 4em;
+}
+
+img {
+  width: 400px;
+  margin-top: 47px;
+}
+
+.slideshow-buttons {
+  top: 70%;
+  display: none;
+}
+
+.one,
+.two,
+.three,
+.four {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: light;
+}
+
+.one {
+  left: 22%;
+}
+
+.two {
+  left: 27%;
+}
+
+.three {
+  left: 32%;
+}
+
+.four {
+  left: 37%;
+}
+
+.product {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  top: 10%;
+  left: 50%;
+  text-align: left;
+}
+
+.desc {
+  text-transform: none;
+  letter-spacing: 0;
+  margin-bottom: 17px;
+  color: dark;
+  font-size: .7em;
+  line-height: 1.6em;
+  margin-right: 25px;
+  text-align: justify;
+}
+
+
+.add {
+  width: 67%;
+}
+
+.like {
+  width: 22%;
+}
+
+.sizes {
+  display: grid;
+  color: pink;
+  grid-template-columns: repeat(auto-fill, 30px);
+  width: 60%;
+  grid-gap: 4px;
+  margin-left: 20px;
+  margin-top: 5px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.pick {
+  margin-top: 11px;
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+
+.size {
+  padding: 9px;
+  border: 1px solid light;
+  font-size: 0.7em;
+  text-align: center;
+
+  &:hover {
+    background: rose;
+    color: white;
+    transition: all .4s ease-in-out;
+  }
+}
+
+.focus {
+  background: rose;
+  color: white;
+}
+
+
+
+
+
+
+
+.bg-profile {
+  height: 700px;
+  background: linear-gradient(to right, #D74177, #FFE98A);
+  font-family: Helvetica;
+  text-align: center;
+  color: white;
+}
+
+.card {
+  box-sizing: border-box;
+  padding: 5px 5px 5px 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 10px #31C5D7;
+  transition: width 2s, background-color 1s, box-shadow 1s;
+  border-radius: 10px;
+  color: black;
+}
+
+.card:hover {
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.wrapper {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+a {
+  text-decoration: none;
+}
+
+#button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: linear-gradient(to right, #D74177, #FFE98A);
+  width: 100px;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+
+#name {
+  font-size: 24px;
 }
